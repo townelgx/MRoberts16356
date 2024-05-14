@@ -1,0 +1,12 @@
+	{
+		sharpDraw(_id);
+		keyControl();
+
+		if (downSet(_id))
+		{
+			sharpDraw(-new_id, 1);
+			_id = new_id;
+			new_id = rand() % 19 + 1;
+			sharpDraw(new_id, 1);
+			clean();
+		}
