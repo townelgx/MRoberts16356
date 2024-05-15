@@ -1,0 +1,6 @@
+		if (MP_HP == 0)
+		{
+			mciSendString(L"close bg", NULL, 0, NULL);
+			mciSendString(L"open bggo.mp3 alias bg", NULL, 0, NULL);
+			mciSendString(L"play bg repeat", NULL, 0, NULL);
+			putimage(0, 0, &i_backgo, SRCCOPY);
