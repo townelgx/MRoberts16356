@@ -1,0 +1,16 @@
+		if (kill==10&& boss1hp > 0) boss1show = 1;
+ 
+ 
+ 
+ 
+		if (boss1show==1)
+		{
+			Boss1show();
+		}
+ 
+ 
+ 
+ 
+		if ((p_MP->x - p_AP->x) > -pw && (p_MP->x - p_AP->x)<pw && (p_MP->y - p_AP->y)>-ph && (p_MP->y - p_AP->y)<ph )			MP_HP = 0;
+		else if ((p_MP->x - p_AP2->x) > -pw && (p_MP->x - p_AP2->x)<pw && (p_MP->y - p_AP2->y)>-ph && (p_MP->y - p_AP2->y)<ph)	MP_HP = 0;
+		else if (boss1show==1&&boss1image>boss1h&&(p_MP->x-(WINDOW_WIDTH / 2 - boss1w / 2)) >-pw && (p_MP->x-(WINDOW_WIDTH / 2 + boss1w / 2))<pw && p_MP->y<boss1h)		MP_HP = 0;
