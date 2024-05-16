@@ -1,0 +1,11 @@
+int main()
+{
+     Receiver *pReceiver = new Receiver();
+     Command *pCommand = new ConcreteCommand(pReceiver);
+     Invoker *pInvoker = new Invoker(pCommand);
+     pInvoker->Invoke();
+     SAFE_DELETE(pInvoker);
+     SAFE_DELETE(pCommand);
+     SAFE_DELETE(pReceiver);
+     return 0;
+}
