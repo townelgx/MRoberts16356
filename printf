@@ -1,0 +1,14 @@
+        if (isgameover)
+        {
+            clear(target, bullet);
+            plane_x = 0;
+            plane_y = 19;
+            isfire = 0;
+            system("cls");
+            gotoxy(8, 8);
+            printf("SCORE: %d", grade);
+            gotoxy(8, 9);
+            printf("GAME OVER");
+            grade = 0;
+            break;
+        }
