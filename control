@@ -1,0 +1,19 @@
+        if (_kbhit())
+        {
+            control = _getch();
+            if (control == ' ')
+                isfire = 1;
+            else
+                isfire = 0;
+            if (control == 'w' && plane_y > 0)
+                plane_y--;
+            if (control == 's' && plane_y < 20)
+                plane_y++;
+            if (control == 'a' && plane_x > 0)
+                plane_x--;
+            if (control == 'd' && plane_x < 20)
+                plane_x++;
+        }
+ 
+ 
+ 
